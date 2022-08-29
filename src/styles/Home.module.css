@@ -1,0 +1,20 @@
+.mainContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cardArea {
+    width: 100%;
+    padding: 40px 8%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero svg path {
+    background-color: #f4f4f4;
+}
+
