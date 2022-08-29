@@ -6,7 +6,7 @@ function SignIn(){
   return (
       <>
         <Head>
-           <title>Moment | Home</title>
+           <title>NFT Access | Sign In</title>
         </Head>
         <main className={styles.mainContainer}>
           NFT Access
