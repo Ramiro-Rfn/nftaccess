@@ -1,8 +1,18 @@
+import { signIn, useSession } from 'next-auth/react';
 import Head from 'next/head';
+import Router from 'next/router';
 import { FiEye, FiXCircle } from 'react-icons/fi';
+signIn
+
 import styles from '../styles/SignIn.module.scss';
 
 function SignIn(){
+  const session = useSession();
+
+  if(session.data) {
+    Router.push('/profile')
+  }
+    
   return (
       <>
         <Head>
@@ -43,7 +53,7 @@ function SignIn(){
 
                 <div className={styles.buttonsContainer}>
                   <button type='submit'>Sign in</button>
-                  <a href="">
+                  <a href="" onClick={()=>signIn('oauth')}>
                     <img src="/images/Google.svg" alt="google icon" />
                     Sign in with Google
                   </a>

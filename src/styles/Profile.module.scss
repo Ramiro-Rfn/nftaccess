@@ -1,0 +1,68 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(83, 25, 105);
+}
+
+.cardContainer {
+    width: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5rem;
+    margin: auto auto;
+    /* From https://css.glass */
+    backdrop-filter: blur(9px) saturate(156%);
+    -webkit-backdrop-filter: blur(9px) saturate(156%);
+    background-color: rgba(17, 25, 40, 0.35);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    .imageContainer {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    .profileInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+
+        h3 {
+            font-size: 1.75rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #fff;
+            margin-bottom: 1rem;
+
+        }
+
+        button {
+            font-size: 0.875rem;
+            color: #fff;
+            padding: 0.8rem 1rem;
+            background-color: violet;
+            border-radius: 5px;
+        }
+
+    }
+}
